@@ -10,16 +10,16 @@ function currentTime() {
     let min = time.getMinutes()
     let sec = time.getSeconds()
 
-    h.innerHTML = hours
-    m.innerHTML = min
-    s.innerHTML = sec
+    h.innerHTML = hours + " Hr"
+    m.innerHTML = min + " Min"
+    s.innerHTML = sec + " Sec"
 
-    
-let year= document.getElementById("year")
-year.innerHTML=time.getFullYear()
+
+    let year = document.getElementById("year")
+    year.innerHTML = time.getFullYear()
 }
 
 
 setInterval(() => {
     currentTime()
-}, 1000);
+}, 100);

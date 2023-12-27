@@ -15,23 +15,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
 .container {
-    width: 400px;
-    height: 200px;
+    width: 60%;
+    height: 120px;
     background-color: #e5e5f7;
     opacity: 1;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 165px), repeating-linear-gradient(#00DDEB, #5B42F3);
     display: flex;
-    border-radius: 20px;
+    border-radius: 2rem;
+    flex-direction: row;
 
 }
 
 /* CSS */
 .block {
-    padding: 20px;
+    padding: 10px;
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
@@ -44,6 +46,8 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     flex-wrap: wrap;
+    justify-content: initial;
+    align-items: center;
 }
 
 .block:before {
@@ -98,22 +102,8 @@
     border-radius: 10px;
 }
 
-.container {
 
-    cursor: pointer;
-}
-
-
-@media (min-width: 768px) {
-    .container {
-        font-size: 24px;
-        min-width: 196px;
-    }
-}
-
-
-
-.fancy{
+.fancy {
     border-radius: 10px;
     padding: 10px;
     background-color: #e5e5f7;
