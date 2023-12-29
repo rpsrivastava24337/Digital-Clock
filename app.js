@@ -10,9 +10,9 @@ function currentTime() {
     let min = time.getMinutes()
     let sec = time.getSeconds()
 
-    h.innerHTML = hours + " Hr"
-    m.innerHTML = min + " Min"
-    s.innerHTML = sec + " Sec"
+    h.innerHTML = (hours < 10 ? "0" : "") + hours + " Hr"
+    m.innerHTML = (min < 10 ? "0" : "") + min + " Min"
+    s.innerHTML = (sec < 10 ? "0" : "") + sec + " Sec"
 
 
     let year = document.getElementById("year")
